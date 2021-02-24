@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
+
+    <title>Sliding</title>
+    <style>
+        
+    </style>
+  </head>
+  <body>
+
+    <div class="container mt-5">
+        <div class="row justify-content-center w-100 h-100">
+            <div class="col">
+                <div id="textBox">
+                    The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ in their grammar, their pronunciation and their most common words. Everyone realizes why a new common language would be desirable: one could refuse to pay expensive translators. To achieve this, it would be necessary to have uniform grammar, pronunciation and more common words. If several languages coalesce, the grammar of the resulting language is more simple and regular than that of the individual languages. The new common language will be more simple and regular than the existing European languages. It will be as simple as Occidental; in fact, it will be Occidental. To an English person, it will seem like simplified English, as a skeptical Cambridge friend of mine told me what Occidental is.The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ in their grammar, their pronunciation and their most common words. Everyone realizes why a new common language would be desirable: one could refuse to pay expensive translators. To 
+                </div>
+            </div>
+        </div>
+        <div class="row mx-auto w-100 justify-content-center mt-5">
+            <div class="col-2">
+                <button type="button" class="btn btn-primary" id="slide-up">Slide Up</button>
+            </div>
+            <div class="col-2">
+                <button type="button" class="btn btn-secondary" id="slide-down">Slide Down</button>
+            </div>
+            <div class="col-2">
+                <button type="button" class="btn btn-secondary" id="slide-toggle">Slide Toogle</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.bundle.min.js" ></script>
+
+    <script>
+        $("document").ready(function(){
+                // Slide-Up textbox
+                $("#slide-up").on("click",function(){
+                    $("#textBox").slideUp("1000", "linear");
+                });
+
+                // Slide-Down textbox
+                $("#slide-down").on("click",function(){
+                    $("#textBox").slideDown("1000", "linear");
+                });
+
+                // Slide-Toggle textbox
+                $("#slide-toggle").on("click",function(){
+                    $("#textBox").slideToggle("1000", "linear");
+                });
+        });
+    </script>
+
+  </body>
+</html>
