@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
+
+    <title>Create Content</title>
+    <style>
+        
+    </style>
+  </head>
+  <body>
+
+
+    <div class="container">
+        <div class="row justify-content-center text-center">
+                <div class="col my-5">
+                    <p>
+                        The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary.
+                    </p>
+                    <p>
+                        The languages only differ in their grammar, their pronunciation and their most common words.
+                    </p>
+                    <p>
+                        Everyone realizes why a new common language would be desirable: one could refuse to pay expensive translators. To achieve this, it would be necessary to have uniform grammar, pronunciation and more common words.
+                    </p>
+                    <p>
+                        If several languages coalesce, the grammar of the resulting language is more simple and regular than that of the individual languages.  
+                    </p>
+                </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.bundle.min.js" ></script>
+
+    <script>
+        $("document").ready(function(){
+            $("p:first-child").css("border" , "1px grey solid");
+            $("p:last-of-type").css("border" , "2px red solid");
+            $("p:contains('desirable')").css("border" , "3px Maroon solid");
+            $("p:nth-child(2)").css("border" , "3px blue solid");
+            differ
+            
+            
+        });
+    </script>
+
+</body>
+</html>
