@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
+
+    <title>Advanced Selectors</title>
+    <style>
+        
+    </style>
+  </head>
+  <body>
+
+    <p >
+        Everyone realizes why a new common language would be desirable: one could refuse to pay expensive translators.
+    </p>
+    <p >
+        Everyone realizes why a new common language would be desirable: one could refuse to pay expensive translators. To achieve this, it would be necessary to have uniform grammar, pronunciation and more common words. 
+    </p>
+
+    <div class="container my-5">
+        <div class="row justify-content-center w-100 h-100">
+            <div class="col">
+                
+                <div >
+                    
+                    <p>
+                        The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ in their grammar, their pronunciation and their most common words. Everyone realizes why a new common language would be desirable: one could refuse to pay expensive translators.
+                    </p>
+                    <p>
+                        To achieve this, it would be necessary to have uniform grammar, pronunciation and more common words. If several languages coalesce, the grammar of the resulting language is more simple and regular than that of the individual languages. The new common language will be more simple and regular than the existing European languages. It will be as simple as Occidental; in fact, it will be Occidental. 
+                    </p>
+                    <p>
+                        To an English person, it will seem like simplified English, as a skeptical Cambridge friend of mine told me what Occidental is.The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ in their grammar, their pronunciation and their most common words. Everyone realizes why a new common language would be desirable: one could refuse to pay expensive translators.
+                    </p>
+                    <p class="fourth">
+                        The new common language will be more simple and regular than the existing European languages. It will be as simple as Occidental; in fact, it will be Occidental. To an English person, it will seem like simplified English, as a skeptical Cambridge friend of mine told me what Occidental is.The European languages are members of the same family.
+                    </p>
+                </div>
+                <ul>
+                    <li>First Item</li>
+                    <li>Second Item</li>
+                    <li>Third Item</li>
+                    <li>Fourth Item</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.bundle.min.js" ></script>
+
+    <script>
+        $("document").ready(function(){
+
+                $("div> p").css("border" , "1px red solid");
+
+                $("div > p.fourth").css("border" , "3px green dashed");
+                $("div + ul").css("border" , "3px yellow dashed");
+        });
+    </script>
+
+</body>
+</html>
